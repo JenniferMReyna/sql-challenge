@@ -78,12 +78,12 @@ WHERE dpts.dept_name = 'Sales';
 --employee number, last name, first name, and department name.
 
 SELECT edpts.emp_no, emps.last_name, emps.first_name, dpts.dept_name
-FROM dept_emp as edpts
+FROM dept_emp AS edpts
 INNER JOIN
-employees as emps
+employees AS emps
 ON emps.emp_no = edpts.emp_no
 INNER JOIN
-departments as dpts
+departments AS dpts
 ON dpts.dept_no = edpts.dept_no
 WHERE dpts.dept_name = 'Sales' OR dpts.dept_name = 'Development';
 
